@@ -40,6 +40,18 @@ def configure_windows_environment() -> None:
                 if hadoop_bin.exists() and str(hadoop_bin) not in os.environ.get("PATH", ""):
                     os.environ["PATH"] = f"{hadoop_bin};" + os.environ.get("PATH", "")
                 break
+    else:
+        # Linux (e.g. Streamlit Community Cloud Debian container)
+        if "JAVA_HOME" not in os.environ or not Path(os.environ["JAVA_HOME"]).exists():
+            linux_java_candidates = [
+                "/usr/lib/jvm/default-java",
+                "/usr/lib/jvm/java-17-openjdk-amd64",
+                "/usr/lib/jvm/java-11-openjdk-amd64",
+            ]
+            for java_cand in linux_java_candidates:
+                if Path(java_cand).exists():
+                    os.environ["JAVA_HOME"] = java_cand
+                    break
 
     # Ensure PySpark uses the running Python interpreter
     os.environ["PYSPARK_PYTHON"] = sys.executable
