@@ -1,0 +1,408 @@
+{
+  "dataset_health": {
+    "total_raw_records": 9000,
+    "exact_duplicates_removed": 877,
+    "deduplicated_records": 8123,
+    "missing_values_count": 0
+  },
+  "kpis": {
+    "total_learners": 8123,
+    "completed_learners": 3568,
+    "not_completed_learners": 4555,
+    "overall_completion_pct": 43.92,
+    "avg_quiz_score": 75.09,
+    "avg_time_spent": 50.61,
+    "avg_videos_watched": 10.15,
+    "avg_quizzes_taken": 5.17,
+    "avg_completion_rate": 51.19
+  },
+  "category_analytics": {
+    "Arts": {
+      "total_learners": 1570,
+      "completed_learners": 699,
+      "not_completed_learners": 871,
+      "completion_rate_pct": 44.52,
+      "avg_quiz_score": 75.07,
+      "avg_time_spent": 50.23,
+      "avg_videos_watched": 10.18,
+      "avg_quizzes_taken": 5.11,
+      "avg_progress_rate": 50.68
+    },
+    "Business": {
+      "total_learners": 1657,
+      "completed_learners": 733,
+      "not_completed_learners": 924,
+      "completion_rate_pct": 44.24,
+      "avg_quiz_score": 75.43,
+      "avg_time_spent": 50.47,
+      "avg_videos_watched": 10.06,
+      "avg_quizzes_taken": 5.2,
+      "avg_progress_rate": 51.86
+    },
+    "Health": {
+      "total_learners": 1634,
+      "completed_learners": 691,
+      "not_completed_learners": 943,
+      "completion_rate_pct": 42.29,
+      "avg_quiz_score": 75.57,
+      "avg_time_spent": 51.06,
+      "avg_videos_watched": 10.04,
+      "avg_quizzes_taken": 5.2,
+      "avg_progress_rate": 51.74
+    },
+    "Programming": {
+      "total_learners": 1633,
+      "completed_learners": 735,
+      "not_completed_learners": 898,
+      "completion_rate_pct": 45.01,
+      "avg_quiz_score": 74.77,
+      "avg_time_spent": 51.27,
+      "avg_videos_watched": 10.44,
+      "avg_quizzes_taken": 5.16,
+      "avg_progress_rate": 51.09
+    },
+    "Science": {
+      "total_learners": 1629,
+      "completed_learners": 710,
+      "not_completed_learners": 919,
+      "completion_rate_pct": 43.59,
+      "avg_quiz_score": 74.62,
+      "avg_time_spent": 50.0,
+      "avg_videos_watched": 10.02,
+      "avg_quizzes_taken": 5.16,
+      "avg_progress_rate": 50.56
+    }
+  },
+  "device_analytics": {
+    "0": {
+      "device_code": 0,
+      "total_learners": 4058,
+      "completed_learners": 1765,
+      "not_completed_learners": 2293,
+      "completion_rate_pct": 43.49,
+      "avg_quiz_score": 75.05,
+      "avg_time_spent": 50.43
+    },
+    "1": {
+      "device_code": 1,
+      "total_learners": 4065,
+      "completed_learners": 1803,
+      "not_completed_learners": 2262,
+      "completion_rate_pct": 44.35,
+      "avg_quiz_score": 75.13,
+      "avg_time_spent": 50.78
+    }
+  },
+  "correlation_matrix": {
+    "TimeSpentOnCourse": {
+      "TimeSpentOnCourse": 1.0,
+      "NumberOfVideosWatched": 0.0242,
+      "NumberOfQuizzesTaken": -0.0059,
+      "QuizScores": 0.0029,
+      "CompletionRate": 0.0178,
+      "DeviceType": 0.0061,
+      "CourseCompletion": 0.1864
+    },
+    "NumberOfVideosWatched": {
+      "TimeSpentOnCourse": 0.0242,
+      "NumberOfVideosWatched": 1.0,
+      "NumberOfQuizzesTaken": -0.0139,
+      "QuizScores": -0.0167,
+      "CompletionRate": 0.0212,
+      "DeviceType": 0.0066,
+      "CourseCompletion": 0.2395
+    },
+    "NumberOfQuizzesTaken": {
+      "TimeSpentOnCourse": -0.0059,
+      "NumberOfVideosWatched": -0.0139,
+      "NumberOfQuizzesTaken": 1.0,
+      "QuizScores": -0.0023,
+      "CompletionRate": 0.0097,
+      "DeviceType": 0.0216,
+      "CourseCompletion": 0.2917
+    },
+    "QuizScores": {
+      "TimeSpentOnCourse": 0.0029,
+      "NumberOfVideosWatched": -0.0167,
+      "NumberOfQuizzesTaken": -0.0023,
+      "QuizScores": 1.0,
+      "CompletionRate": -0.0077,
+      "DeviceType": 0.003,
+      "CourseCompletion": 0.3047
+    },
+    "CompletionRate": {
+      "TimeSpentOnCourse": 0.0178,
+      "NumberOfVideosWatched": 0.0212,
+      "NumberOfQuizzesTaken": 0.0097,
+      "QuizScores": -0.0077,
+      "CompletionRate": 1.0,
+      "DeviceType": -0.0106,
+      "CourseCompletion": 0.3288
+    },
+    "DeviceType": {
+      "TimeSpentOnCourse": 0.0061,
+      "NumberOfVideosWatched": 0.0066,
+      "NumberOfQuizzesTaken": 0.0216,
+      "QuizScores": 0.003,
+      "CompletionRate": -0.0106,
+      "DeviceType": 1.0,
+      "CourseCompletion": 0.0087
+    },
+    "CourseCompletion": {
+      "TimeSpentOnCourse": 0.1864,
+      "NumberOfVideosWatched": 0.2395,
+      "NumberOfQuizzesTaken": 0.2917,
+      "QuizScores": 0.3047,
+      "CompletionRate": 0.3288,
+      "DeviceType": 0.0087,
+      "CourseCompletion": 1.0
+    }
+  },
+  "distributions": {
+    "TimeSpentOnCourse": {
+      "min": 1.01,
+      "q25": 26.11,
+      "median": 50.32,
+      "q75": 75.38,
+      "max": 99.99,
+      "mean": 50.61,
+      "std": 28.36,
+      "hist_counts": [
+        777,
+        778,
+        853,
+        809,
+        854,
+        847,
+        786,
+        780,
+        847,
+        792
+      ],
+      "hist_bins": [
+        1.01,
+        10.9,
+        20.8,
+        30.7,
+        40.6,
+        50.5,
+        60.4,
+        70.3,
+        80.2,
+        90.09,
+        99.99
+      ]
+    },
+    "NumberOfVideosWatched": {
+      "min": 0.0,
+      "q25": 5.0,
+      "median": 10.0,
+      "q75": 15.0,
+      "max": 20.0,
+      "mean": 10.15,
+      "std": 5.99,
+      "hist_counts": [
+        699,
+        770,
+        739,
+        775,
+        780,
+        801,
+        801,
+        818,
+        781,
+        1159
+      ],
+      "hist_bins": [
+        0.0,
+        2.0,
+        4.0,
+        6.0,
+        8.0,
+        10.0,
+        12.0,
+        14.0,
+        16.0,
+        18.0,
+        20.0
+      ]
+    },
+    "NumberOfQuizzesTaken": {
+      "min": 0.0,
+      "q25": 2.0,
+      "median": 5.0,
+      "q75": 8.0,
+      "max": 10.0,
+      "mean": 5.17,
+      "std": 3.13,
+      "hist_counts": [
+        648,
+        684,
+        720,
+        686,
+        755,
+        776,
+        774,
+        746,
+        763,
+        1571
+      ],
+      "hist_bins": [
+        0.0,
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        5.0,
+        6.0,
+        7.0,
+        8.0,
+        9.0,
+        10.0
+      ]
+    },
+    "QuizScores": {
+      "min": 50.01,
+      "q25": 62.79,
+      "median": 75.27,
+      "q75": 87.5,
+      "max": 99.99,
+      "mean": 75.09,
+      "std": 14.34,
+      "hist_counts": [
+        806,
+        796,
+        764,
+        810,
+        831,
+        873,
+        813,
+        825,
+        809,
+        796
+      ],
+      "hist_bins": [
+        50.01,
+        55.0,
+        60.0,
+        65.0,
+        70.0,
+        75.0,
+        80.0,
+        85.0,
+        90.0,
+        95.0,
+        99.99
+      ]
+    },
+    "CompletionRate": {
+      "min": 0.01,
+      "q25": 26.28,
+      "median": 51.58,
+      "q75": 76.73,
+      "max": 99.98,
+      "mean": 51.19,
+      "std": 29.07,
+      "hist_counts": [
+        784,
+        783,
+        761,
+        806,
+        786,
+        793,
+        847,
+        827,
+        818,
+        918
+      ],
+      "hist_bins": [
+        0.01,
+        10.01,
+        20.0,
+        30.0,
+        40.0,
+        49.99,
+        59.99,
+        69.99,
+        79.99,
+        89.98,
+        99.98
+      ]
+    },
+    "DeviceType": {
+      "min": 0.0,
+      "q25": 0.0,
+      "median": 1.0,
+      "q75": 1.0,
+      "max": 1.0,
+      "mean": 0.5,
+      "std": 0.5,
+      "hist_counts": [
+        4058,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        4065
+      ],
+      "hist_bins": [
+        0.0,
+        0.1,
+        0.2,
+        0.3,
+        0.4,
+        0.5,
+        0.6,
+        0.7,
+        0.8,
+        0.9,
+        1.0
+      ]
+    },
+    "CourseCompletion": {
+      "min": 0.0,
+      "q25": 0.0,
+      "median": 0.0,
+      "q75": 1.0,
+      "max": 1.0,
+      "mean": 0.44,
+      "std": 0.5,
+      "hist_counts": [
+        4555,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        3568
+      ],
+      "hist_bins": [
+        0.0,
+        0.1,
+        0.2,
+        0.3,
+        0.4,
+        0.5,
+        0.6,
+        0.7,
+        0.8,
+        0.9,
+        1.0
+      ]
+    }
+  },
+  "insights": [
+    "Out of 8,123 deduplicated learners, 3,568 (43.92%) successfully completed their course, showing a balanced binary classification target.",
+    "Quiz Scores (r = 0.3047) and Number of Quizzes Taken (r = 0.2917) demonstrate the highest positive linear correlation with Course Completion.",
+    "Learners spent an average of 50.61 hours on course material, watching an average of 10.15 videos and taking 5.17 quizzes.",
+    "CompletionRate has a moderate correlation of r = 0.3288 with the binary target, reflecting that high progress alone does not automatically equate to certification completion.",
+    "Device type shows almost neutral correlation with completion (r = 0.0087), indicating consistent course accessibility regardless of device."
+  ]
+}

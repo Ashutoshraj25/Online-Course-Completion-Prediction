@@ -1,0 +1,34 @@
+{
+  "logistic_regression": {
+    "true_positives": 531,
+    "true_negatives": 723,
+    "false_positives": 124,
+    "false_negatives": 173,
+    "matrix": [
+      [
+        723,
+        124
+      ],
+      [
+        173,
+        531
+      ]
+    ]
+  },
+  "random_forest": {
+    "true_positives": 641,
+    "true_negatives": 834,
+    "false_positives": 13,
+    "false_negatives": 63,
+    "matrix": [
+      [
+        834,
+        13
+      ],
+      [
+        63,
+        641
+      ]
+    ]
+  }
+}
